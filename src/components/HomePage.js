@@ -5,13 +5,7 @@ import { useWeb3 } from "./Web3Provider";
 import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
-  const {
-    connected,
-    walletAddress,
-    connectWallet,
-    shortenAddress,
-    disconnectWallet,
-  } = useWeb3();
+  const { connected, walletAddress, disconnectWallet } = useWeb3();
 
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("addressValidation");

@@ -3,13 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useWeb3 } from "./Web3Provider";
 
 const LandingPage = () => {
-  const {
-    connected,
-    walletAddress,
-    connectWallet,
-    shortenAddress,
-    disconnectWallet,
-  } = useWeb3();
+  const { connected, connectWallet } = useWeb3();
 
   const navigate = useNavigate();
 

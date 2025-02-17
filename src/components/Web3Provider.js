@@ -11,15 +11,15 @@ export const Web3Provider = ({ children }) => {
   const [baseETHBalance, setBaseETHBalance] = useState("0");
   const [web3, setWeb3] = useState(null);
 
-  const saveBalancesToLocalStorage = (ethBalance, lobTokenBalance) => {
-    localStorage.setItem(
-      "balances",
-      JSON.stringify({
-        baseETHBalance: ethBalance,
-        lobBalance: lobTokenBalance,
-      })
-    );
-  };
+  // const saveBalancesToLocalStorage = (ethBalance, lobTokenBalance) => {
+  //   localStorage.setItem(
+  //     "balances",
+  //     JSON.stringify({
+  //       baseETHBalance: ethBalance,
+  //       lobBalance: lobTokenBalance,
+  //     })
+  //   );
+  // };
 
   const restoreBalancesFromLocalStorage = () => {
     const savedBalances = localStorage.getItem("balances");
